@@ -1,0 +1,3 @@
+name = "encoder-changelog"
+main = "eco.js"
+compatibility_date = "2025-10-12"
