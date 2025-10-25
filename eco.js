@@ -21,18 +21,58 @@ export default {
 <div class="version-group">
 <div class="group-title"><span class="group-icon">▼</span>V1</div>
 <div class="changelog">
-<div class="entry open"><div class="entry-header"><div class="version-info"><div class="version-number">v0.5.0</div><div class="version-date">Latest</div></div><div class="expand-icon">▼</div></div><div class="entry-content"><div class="content-inner"><div class="section"><div class="section-title">Added</div><ul class="item-list"><li>ADD, REMOVE, COMPRESS, TRIM Tools</li><li>Add Subtitles & Audio in videos</li><li>Remove Subtitles & Audio tracks</li><li>Compress Media (144p to 1080p)</li><li>Trim videos by time range</li><li>4 GB Uploading Support</li></ul></div></div></div></div>
-<div class="entry"><div class="entry-header"><div class="version-info"><div class="version-number">v0.4.0</div><div class="version-date">Previous</div></div><div class="expand-icon">▼</div></div><div class="entry-content"><div class="content-inner"><div class="section"><div class="section-title">Added</div><ul class="item-list"><li>EXTRACT Tool</li><li>Extract Subtitles from videos</li><li>Extract Audio tracks</li><li>Extract Thumbnails from Video's</li></ul></div><div class="section"><div class="section-title">Removed</div><ul class="item-list"><li>AVI format support from CONVERT Tool due to instability</li></ul></div></div></div></div>
+
+<div class="entry open">
+<div class="entry-header">
+<div class="version-info">
+<div class="version-number">v0.6.0</div>
+<div class="version-date">Latest</div>
+</div>
+<div class="expand-icon">▼</div>
+</div>
+<div class="entry-content">
+<div class="content-inner">
+<div class="section">
+<div class="section-title">Added</div>
+<ul class="item-list">
+<li>Video to MP3 conversion in CONVERT Tool</li>
+<li>Default Watermark Font Changed</li>
+<li>Added Time Range and Opacity in Watermark Tool</li>
+</ul>
+</div>
+<div class="section">
+<div class="section-title">Fixed</div>
+<ul class="item-list">
+<li>Merge function now includes a 3-hour timeout to prevent indefinite hangs</li>
+<li>Added support for multi-audio and subtitle tracks in merged videos</li>
+<li>Implemented error tolerance for corrupted frames to prevent merge failures</li>
+<li>Improved process handling to avoid deadlocks</li>
+<li>Enhanced error checking to ensure the merged file is valid and playable</li>
+<li>Added cleanup for failed or incomplete output files</li>
+<li>Implemented a pre-validation checkup phase to filter out corrupted or invalid files before merging</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div class="entry"><div class="entry-header"><div class="version-info"><div class="version-number">v0.5.0</div><div class="version-date">Previous</div></div><div class="expand-icon">▼</div></div><div class="entry-content"><div class="content-inner"><div class="section"><div class="section-title">Added</div><ul class="item-list"><li>ADD, REMOVE, COMPRESS, TRIM Tools</li><li>Add Subtitles & Audio in videos</li><li>Remove Subtitles & Audio tracks</li><li>Compress Media (144p to 1080p)</li><li>Trim videos by time range</li><li>4 GB Uploading Support</li></ul></div></div></div></div>
+
+<div class="entry"><div class="entry-header"><div class="version-info"><div class="version-number">v0.4.0</div><div class="version-date">Archive</div></div><div class="expand-icon">▼</div></div><div class="entry-content"><div class="content-inner"><div class="section"><div class="section-title">Added</div><ul class="item-list"><li>EXTRACT Tool</li><li>Extract Subtitles from videos</li><li>Extract Audio tracks</li><li>Extract Thumbnails from Video's</li></ul></div><div class="section"><div class="section-title">Removed</div><ul class="item-list"><li>AVI format support from CONVERT Tool due to instability</li></ul></div></div></div></div>
+
 <div class="entry"><div class="entry-header"><div class="version-info"><div class="version-number">v0.3.0</div><div class="version-date">Archive</div></div><div class="expand-icon">▼</div></div><div class="entry-content"><div class="content-inner"><div class="section"><div class="section-title">Added</div><ul class="item-list"><li>CONVERT Tool</li><li>MP4 to MKV conversion</li><li>MP4 to AVI conversion</li><li>MKV to MP4 conversion</li></ul></div></div></div></div>
+
 <div class="entry"><div class="entry-header"><div class="version-info"><div class="version-number">v0.2.0</div><div class="version-date">Archive</div></div><div class="expand-icon">▼</div></div><div class="entry-content"><div class="content-inner"><div class="section"><div class="section-title">Added</div><ul class="item-list"><li>Video merge functionality (video + video)</li></ul></div></div></div></div>
+
 <div class="entry"><div class="entry-header"><div class="version-info"><div class="version-number">v0.0.1</div><div class="version-date">Initial</div></div><div class="expand-icon">▼</div></div><div class="entry-content"><div class="content-inner"><div class="section"><div class="section-title">Added</div><ul class="item-list"><li>Initial project setup</li><li>Base handlers implementation</li><li>Core watermark functionality</li><li>Video processing architecture</li></ul></div></div></div></div>
+
 </div>
 </div>
 
 <div class="version-group">
 <div class="group-title"><span class="group-icon">▼</span>Upcoming</div>
 <div class="changelog">
-<div class="entry"><div class="entry-header"><div class="version-info"><div class="version-number">In Development</div><div class="version-date"></div></div><div class="expand-icon">▼</div></div><div class="entry-content"><div class="content-inner"><div class="section"><div class="section-title">TODO</div><ul class="item-list"><li>Custom Codec for FFmpeg</li><li>Custom CRF (Constant Rate Factor)</li><li>Preset options for encoding</li><li>Audio Bitrate Selection</li><li>Hard Subtitle Adding Support in ADD tool</li></ul></div><div class="section"><div class="section-title">Note</div><p class="section-empty">All features will be available in User Settings</p></div></div></div></div>
+<div class="entry"><div class="entry-header"><div class="version-info"><div class="version-number">In Development</div></div><div class="expand-icon">▼</div></div><div class="entry-content"><div class="content-inner"><div class="section"><div class="section-title">TODO</div><ul class="item-list"><li>Custom Codec for FFmpeg</li><li>Custom CRF (Constant Rate Factor)</li><li>Preset options for encoding</li><li>Audio Bitrate Selection</li><li>Hard Subtitle Adding Support in ADD tool</li></ul></div><div class="section"><div class="section-title">Note</div><p class="section-empty">All features will be available in User Settings</p></div></div></div></div>
 </div>
 </div>
 
